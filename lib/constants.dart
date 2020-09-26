@@ -18,3 +18,26 @@ const TextStyle kBoldTextStyle = TextStyle(
 const kActiveCardColor = Color(0xff1d1e33);
 const kInactiveCardColor = Color(0xFF111328);
 const kBottomContainerColor = Color(0xFFEB1555);
+
+const Map<String, Map> kResultMap = {
+  "underweight":{
+    "title": "UNDERWEIGHT",
+    "titleColor": Colors.yellow,
+    "messageText": "Your BMI result is quite low. You gotta eat more!",
+  },
+  "normal":{
+    "title": "NORMAL",
+    "titleColor": Colors.green,
+    "messageText": "You have a normal body weight. Good job!",
+  },
+  "overweight":{
+    "title": "OVERWEIGHT",
+    "titleColor": Colors.orange,
+    "messageText": "You weight is on the higher end. You need to exercise more.",
+  },
+  "obese":{
+    "title": "OBESE",
+    "titleColor": Colors.red,
+    "messageText": "You need to do a lot of exercising!",
+  },
+};

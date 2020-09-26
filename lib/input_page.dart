@@ -1,7 +1,9 @@
+import 'package:bmi_calculator/result_page.dart';
 import 'package:bmi_calculator/reusable_card.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:flutter/material.dart';
+import 'dart:math';
 
 import 'constants.dart';
 import 'gender_card.dart';
@@ -23,11 +25,18 @@ class _InputPageState extends State<InputPage> {
   int age = 20;
 
   void calculateBMI() {
-    if (selectedGender != null) {
-      //calculate BMI
-    } else {
-      //ask user to select a gender
-    }
+    //calculate BMI
+    double bmi= (weight* 10000.0)/pow(height,2);
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) {
+          return ResultPage(
+            bmi: bmi,
+          );
+        },
+      ),
+    );
   }
 
   @override
