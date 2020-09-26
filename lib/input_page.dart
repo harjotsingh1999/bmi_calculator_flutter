@@ -128,10 +128,10 @@ class _InputPageState extends State<InputPage> {
                   SliderTheme(
                     data: SliderTheme.of(context).copyWith(
                       thumbShape: RoundSliderThumbShape(
-                        enabledThumbRadius: 15,
+                        enabledThumbRadius: 12,
                       ),
                       overlayShape: RoundSliderOverlayShape(
-                        overlayRadius: 30,
+                        overlayRadius: 25,
                       ),
                       thumbColor: kBottomContainerColor,
                       activeTrackColor: Colors.white,
@@ -254,7 +254,7 @@ class _InputPageState extends State<InputPage> {
                   child: Text(
                     "CALCULATE YOUR BMI",
                     style: TextStyle(
-                      fontSize: 22,
+                      fontSize: 18,
                     ),
                   ),
                 ),
@@ -279,8 +279,8 @@ class RoundIconButton extends StatelessWidget {
       onPressed: onTapFunction,
       shape: CircleBorder(),
       constraints: BoxConstraints.tightFor(
-        width: 56,
-        height: 56,
+        width: 50,
+        height: 50,
       ),
       splashColor: kActiveCardColor,
       fillColor: kButtonColor,

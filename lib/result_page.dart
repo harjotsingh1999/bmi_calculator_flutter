@@ -61,7 +61,7 @@ class ResultPage extends StatelessWidget {
                 "Your Result",
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
-                  fontSize: 40,
+                  fontSize: 30,
                 ),
               ),
             ),
@@ -93,7 +93,7 @@ class ResultPage extends StatelessWidget {
                   child: Text(
                     "RE-CALCULATE",
                     style: TextStyle(
-                      fontSize: 22,
+                      fontSize: 18,
                     ),
                   ),
                 ),
@@ -141,12 +141,12 @@ class ResultCard extends StatelessWidget {
           "Normal BMI range is:",
           style: TextStyle(
             color: kTextColor,
-            fontSize: 25,
+            fontSize: 22,
           ),
         ),
         Text(
           "18.5 - 25.0 kg/m2",
-          style: TextStyle(fontSize: 25, color: Colors.white),
+          style: TextStyle(fontSize: 22, color: Colors.white),
         ),
         SizedBox(height: 20,),
         Text(
@@ -154,7 +154,7 @@ class ResultCard extends StatelessWidget {
           textAlign: TextAlign.center,
           style: TextStyle(
             color: Colors.white,
-            fontSize: 25,
+            fontSize: 22,
           ),
         ),
         // FlatButton(

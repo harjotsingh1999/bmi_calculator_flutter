@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 //k is added before all variables as naming convention
-const double kIconSize = 100;
+const double kIconSize = 80;
 const double kTextSize = 18;
 const Color kTextColor=Color(0xff8d8e98);
 const Color kButtonColor=Color(0xff4c4f5e);
